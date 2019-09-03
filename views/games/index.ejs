@@ -4,7 +4,7 @@
 
   <h1> Games Page </h1>
 
-  <table>
+  <table class="table table-striped table-hover">
     <tr>
         <th>Title</th>
         <th>Developer</th>
@@ -20,8 +20,8 @@
         <td> <%= games[i].developer %> </td>
         <td> <%= games[i].genre %> </td>
         <td> <%= games[i].year %> </td>
-        <td> <a href="/games/<%= games[i]._id %>"> Edit </a> &nbsp;
-            <a href="/games/delete/<%= games[i]._id %>" class="confirmation"> Delete </a> </td>
+        <td> <a href="/games/<%= games[i]._id %>" class="btn btn-primary"> Edit </a> &nbsp;
+            <a href="/games/delete/<%= games[i]._id %>" class="btn btn-danger confirmation"> Delete </a> </td>
       </tr>
 
       <% } %>
